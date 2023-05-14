@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>NetBook | Clearoute | Assignment</title>
+    <meta content="" name="description" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <meta content="" property="og:title" />
+    <meta content="" property="og:type" />
+    <meta content="" property="og:url" />
+    <meta content="" property="og:image" />
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="site.webmanifest" rel="manifest" />
+    <link href="icon.png" rel="apple-touch-icon" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      rel="stylesheet"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+
+    <meta content="#fafafa" name="theme-color" />
+  </head>
+
+  <body>
+    <header>
+      <!--      SVG list -->
+      <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="netbook" viewBox="0 0 143 34">
+          <path
+            d="M55.984 25H52.624L45.016 13.504V25H41.656V8.224H45.016L52.624 19.744V8.224H55.984V25ZM71.6644 18.064C71.6644 18.544 71.6324 18.976 71.5684 19.36H61.8484C61.9284 20.32 62.2644 21.072 62.8564 21.616C63.4484 22.16 64.1764 22.432 65.0404 22.432C66.2884 22.432 67.1764 21.896 67.7044 20.824H71.3284C70.9444 22.104 70.2084 23.16 69.1204 23.992C68.0324 24.808 66.6964 25.216 65.1124 25.216C63.8324 25.216 62.6804 24.936 61.6564 24.376C60.6484 23.8 59.8564 22.992 59.2804 21.952C58.7204 20.912 58.4404 19.712 58.4404 18.352C58.4404 16.976 58.7204 15.768 59.2804 14.728C59.8404 13.688 60.6244 12.888 61.6324 12.328C62.6404 11.768 63.8004 11.488 65.1124 11.488C66.3764 11.488 67.5044 11.76 68.4964 12.304C69.5044 12.848 70.2804 13.624 70.8244 14.632C71.3844 15.624 71.6644 16.768 71.6644 18.064ZM68.1844 17.104C68.1684 16.24 67.8564 15.552 67.2484 15.04C66.6404 14.512 65.8964 14.248 65.0164 14.248C64.1844 14.248 63.4804 14.504 62.9044 15.016C62.3444 15.512 62.0004 16.208 61.8724 17.104H68.1844ZM78.0289 14.464V20.896C78.0289 21.344 78.1329 21.672 78.3409 21.88C78.5649 22.072 78.9329 22.168 79.4449 22.168H81.0049V25H78.8929C76.0609 25 74.6449 23.624 74.6449 20.872V14.464H73.0609V11.704H74.6449V8.416H78.0289V11.704H81.0049V14.464H78.0289ZM86.7816 13.648C87.2136 13.008 87.8056 12.488 88.5576 12.088C89.3256 11.688 90.1976 11.488 91.1736 11.488C92.3096 11.488 93.3336 11.768 94.2456 12.328C95.1736 12.888 95.9016 13.688 96.4296 14.728C96.9736 15.752 97.2456 16.944 97.2456 18.304C97.2456 19.664 96.9736 20.872 96.4296 21.928C95.9016 22.968 95.1736 23.776 94.2456 24.352C93.3336 24.928 92.3096 25.216 91.1736 25.216C90.1816 25.216 89.3096 25.024 88.5576 24.64C87.8216 24.24 87.2296 23.728 86.7816 23.104V25H83.4216V7.24H86.7816V13.648ZM93.8136 18.304C93.8136 17.504 93.6456 16.816 93.3096 16.24C92.9896 15.648 92.5576 15.2 92.0136 14.896C91.4856 14.592 90.9096 14.44 90.2856 14.44C89.6776 14.44 89.1016 14.6 88.5576 14.92C88.0296 15.224 87.5976 15.672 87.2616 16.264C86.9416 16.856 86.7816 17.552 86.7816 18.352C86.7816 19.152 86.9416 19.848 87.2616 20.44C87.5976 21.032 88.0296 21.488 88.5576 21.808C89.1016 22.112 89.6776 22.264 90.2856 22.264C90.9096 22.264 91.4856 22.104 92.0136 21.784C92.5576 21.464 92.9896 21.008 93.3096 20.416C93.6456 19.824 93.8136 19.12 93.8136 18.304ZM105.591 25.216C104.311 25.216 103.159 24.936 102.135 24.376C101.111 23.8 100.303 22.992 99.7113 21.952C99.1353 20.912 98.8473 19.712 98.8473 18.352C98.8473 16.992 99.1433 15.792 99.7353 14.752C100.343 13.712 101.167 12.912 102.207 12.352C103.247 11.776 104.407 11.488 105.687 11.488C106.967 11.488 108.127 11.776 109.167 12.352C110.207 12.912 111.023 13.712 111.615 14.752C112.223 15.792 112.527 16.992 112.527 18.352C112.527 19.712 112.215 20.912 111.591 21.952C110.983 22.992 110.151 23.8 109.095 24.376C108.055 24.936 106.887 25.216 105.591 25.216ZM105.591 22.288C106.199 22.288 106.767 22.144 107.295 21.856C107.839 21.552 108.271 21.104 108.591 20.512C108.911 19.92 109.071 19.2 109.071 18.352C109.071 17.088 108.735 16.12 108.063 15.448C107.407 14.76 106.599 14.416 105.639 14.416C104.679 14.416 103.871 14.76 103.215 15.448C102.575 16.12 102.255 17.088 102.255 18.352C102.255 19.616 102.567 20.592 103.191 21.28C103.831 21.952 104.631 22.288 105.591 22.288ZM120.896 25.216C119.616 25.216 118.464 24.936 117.44 24.376C116.416 23.8 115.608 22.992 115.016 21.952C114.44 20.912 114.152 19.712 114.152 18.352C114.152 16.992 114.448 15.792 115.04 14.752C115.648 13.712 116.472 12.912 117.512 12.352C118.552 11.776 119.712 11.488 120.992 11.488C122.272 11.488 123.432 11.776 124.472 12.352C125.512 12.912 126.328 13.712 126.92 14.752C127.528 15.792 127.832 16.992 127.832 18.352C127.832 19.712 127.52 20.912 126.896 21.952C126.288 22.992 125.456 23.8 124.4 24.376C123.36 24.936 122.192 25.216 120.896 25.216ZM120.896 22.288C121.504 22.288 122.072 22.144 122.6 21.856C123.144 21.552 123.576 21.104 123.896 20.512C124.216 19.92 124.376 19.2 124.376 18.352C124.376 17.088 124.04 16.12 123.368 15.448C122.712 14.76 121.904 14.416 120.944 14.416C119.984 14.416 119.176 14.76 118.52 15.448C117.88 16.12 117.56 17.088 117.56 18.352C117.56 19.616 117.872 20.592 118.496 21.28C119.136 21.952 119.936 22.288 120.896 22.288ZM138.169 25L133.657 19.336V25H130.297V7.24H133.657V17.344L138.121 11.704H142.489L136.633 18.376L142.537 25H138.169Z"
+            fill="#2B2B39"
+          />
+          <path
+            d="M34.0013 16.9998C34.0013 26.3887 26.3901 33.9998 17.0013 33.9998C13.0609 33.9998 9.43369 32.6592 6.55078 30.4093L24.7833 12.1768C25.6535 13.5773 26.1551 15.2292 26.1551 16.9998C26.1551 21.1925 23.3363 24.7269 19.4905 25.8111C18.9167 25.0652 18.0151 24.5844 17.0013 24.5844C15.2679 24.5844 13.8628 25.9896 13.8628 27.7229C13.8628 29.4562 15.2679 30.8613 17.0013 30.8613C18.2989 30.8613 19.4126 30.0738 19.8905 28.9507C25.2853 27.6511 29.2936 22.7935 29.2936 16.9998C29.2936 14.3617 28.4612 11.9159 27.0465 9.91356L30.4107 6.54932C32.6607 9.43223 34.0013 13.0595 34.0013 16.9998Z"
+            fill="#FFAF2E"
+          />
+          <path
+            d="M6.95477 24.0862L3.59053 27.4505C1.34058 24.5676 0 20.9403 0 17C0 7.61116 7.61116 0 17 0C20.9403 0 24.5676 1.34058 27.4505 3.59053L9.218 21.823C8.34783 20.4225 7.84615 18.7708 7.84615 17C7.84615 12.8073 10.6649 9.27294 14.5108 8.18866C15.0846 8.93463 15.9861 9.41538 17 9.41538C18.7333 9.41538 20.1385 8.01024 20.1385 6.27692C20.1385 4.54359 18.7333 3.13845 17 3.13845C15.7024 3.13845 14.5887 3.92597 14.1108 5.04914C8.71598 6.34871 4.70768 11.2063 4.70768 17C4.70768 19.6379 5.54001 22.0838 6.95477 24.0862Z"
+            fill="#F04148"
+          />
+          <circle cx="16.9991" cy="6.27693" fill="#F04148" r="1.30769" />
+          <circle cx="16.9991" cy="27.7232" fill="#FFAF2E" r="1.30769" />
+        </symbol>
+
+        <symbol id="netbook-light" viewBox="0 0 143 34" fill="none">
+          <path
+            d="M52.624 8.224V19.744L45.016 8.224H41.656V25H45.016V13.504L52.624 25H55.984V8.224H52.624ZM65.0164 14.248C66.7444 14.248 68.1364 15.352 68.1844 17.104H61.8724C62.1364 15.28 63.4084 14.248 65.0164 14.248ZM71.3284 20.824H67.7044C67.2724 21.712 66.4804 22.432 65.0404 22.432C63.3604 22.432 62.0164 21.328 61.8484 19.36H71.5684C71.6404 18.928 71.6644 18.496 71.6644 18.064C71.6644 14.104 68.9524 11.488 65.1124 11.488C61.1764 11.488 58.4404 14.152 58.4404 18.352C58.4404 22.528 61.2484 25.216 65.1124 25.216C68.4004 25.216 70.6084 23.272 71.3284 20.824ZM74.6449 20.872C74.6449 23.92 76.3489 25 78.8929 25H81.0049V22.168H79.4449C78.3889 22.168 78.0289 21.784 78.0289 20.896V14.464H81.0049V11.704H78.0289V8.416H74.6449V11.704H73.0609V14.464H74.6449V20.872ZM86.7816 13.648V7.24H83.4216V25H86.7816V23.104C87.5976 24.256 89.0856 25.216 91.1736 25.216C94.5816 25.216 97.2456 22.456 97.2456 18.304C97.2456 14.152 94.5816 11.488 91.1736 11.488C89.1576 11.488 87.5976 12.424 86.7816 13.648ZM93.8136 18.304C93.8136 20.824 92.1096 22.264 90.2856 22.264C88.4856 22.264 86.7816 20.872 86.7816 18.352C86.7816 15.832 88.4856 14.44 90.2856 14.44C92.1096 14.44 93.8136 15.784 93.8136 18.304ZM112.527 18.352C112.527 14.152 109.527 11.488 105.687 11.488C101.847 11.488 98.8473 14.152 98.8473 18.352C98.8473 22.528 101.751 25.216 105.591 25.216C109.455 25.216 112.527 22.528 112.527 18.352ZM102.255 18.352C102.255 15.688 103.863 14.416 105.639 14.416C107.415 14.416 109.071 15.688 109.071 18.352C109.071 20.992 107.367 22.288 105.591 22.288C103.791 22.288 102.255 20.992 102.255 18.352ZM127.832 18.352C127.832 14.152 124.832 11.488 120.992 11.488C117.152 11.488 114.152 14.152 114.152 18.352C114.152 22.528 117.056 25.216 120.896 25.216C124.76 25.216 127.832 22.528 127.832 18.352ZM117.56 18.352C117.56 15.688 119.168 14.416 120.944 14.416C122.72 14.416 124.376 15.688 124.376 18.352C124.376 20.992 122.672 22.288 120.896 22.288C119.096 22.288 117.56 20.992 117.56 18.352ZM130.297 25H133.657V19.336L138.169 25H142.537L136.633 18.376L142.489 11.704H138.121L133.657 17.344V7.24H130.297V25Z"
+            fill="white"
+          />
+          <path
+            d="M34.0013 17C34.0013 26.3888 26.3901 34 17.0013 34C13.0609 34 9.43369 32.6594 6.55078 30.4094L24.7833 12.177C25.6535 13.5775 26.1551 15.2293 26.1551 17C26.1551 21.1927 23.3363 24.727 19.4905 25.8113C18.9167 25.0654 18.0151 24.5846 17.0013 24.5846C15.2679 24.5846 13.8628 25.9897 13.8628 27.7231C13.8628 29.4564 15.2679 30.8615 17.0013 30.8615C18.2989 30.8615 19.4126 30.074 19.8905 28.9508C25.2853 27.6513 29.2936 22.7937 29.2936 17C29.2936 14.3619 28.4612 11.9161 27.0465 9.91374L30.4107 6.5495C32.6607 9.43241 34.0013 13.0596 34.0013 17Z"
+            fill="#FFAF2E"
+          />
+          <path
+            d="M6.95477 24.0862L3.59053 27.4505C1.34058 24.5676 0 20.9403 0 17C0 7.61116 7.61116 0 17 0C20.9403 0 24.5676 1.34058 27.4505 3.59053L9.218 21.823C8.34783 20.4225 7.84615 18.7708 7.84615 17C7.84615 12.8073 10.6649 9.27294 14.5108 8.18866C15.0846 8.93463 15.9861 9.41538 17 9.41538C18.7333 9.41538 20.1385 8.01024 20.1385 6.27692C20.1385 4.54359 18.7333 3.13845 17 3.13845C15.7024 3.13845 14.5887 3.92597 14.1108 5.04914C8.71598 6.34871 4.70768 11.2063 4.70768 17C4.70768 19.6379 5.54001 22.0838 6.95477 24.0862Z"
+            fill="#F04148"
+          />
+          <circle cx="16.9991" cy="6.27693" r="1.30769" fill="#F04148" />
+          <circle cx="16.9991" cy="27.7231" r="1.30769" fill="#FFAF2E" />
+        </symbol>
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+          <title>Bootstrap</title>
+          <path
+            clip-rule="evenodd"
+            d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+            fill-rule="evenodd"
+          ></path>
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 16 16">
+          <path
+            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+          ></path>
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 16 16">
+          <path
+            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+          ></path>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 16 16">
+          <path
+            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+          ></path>
+        </symbol>
+        <symbol id="star" viewBox="0 0 28 28" fill="none">
+          <path
+            d="M14.4825 20.8614L19.9988 24.3563C20.704 24.8031 21.5794 24.1386 21.3702 23.3155L19.7764 17.0459C19.7315 16.8713 19.7368 16.6875 19.7917 16.5158C19.8466 16.3441 19.9489 16.1913 20.0868 16.0751L25.0335 11.9578C25.6835 11.4169 25.348 10.3381 24.5129 10.2839L18.0528 9.86468C17.8788 9.85225 17.7119 9.79064 17.5716 9.68704C17.4312 9.58343 17.3232 9.44208 17.2601 9.27946L14.8507 3.2121C14.7852 3.03949 14.6688 2.89089 14.5168 2.78602C14.3649 2.68116 14.1846 2.625 14 2.625C13.8154 2.625 13.6351 2.68116 13.4832 2.78602C13.3312 2.89089 13.2148 3.03949 13.1493 3.2121L10.74 9.27946C10.6768 9.44208 10.5688 9.58343 10.4285 9.68704C10.2881 9.79064 10.1212 9.85225 9.94721 9.86468L3.4871 10.2839C2.65201 10.3381 2.31653 11.4169 2.96651 11.9578L7.91325 16.0751C8.0511 16.1913 8.15336 16.3441 8.20827 16.5158C8.26317 16.6875 8.26849 16.8713 8.2236 17.0459L6.74553 22.8603C6.49444 23.848 7.54501 24.6453 8.39117 24.1092L13.5175 20.8614C13.6617 20.7696 13.8291 20.7208 14 20.7208C14.1709 20.7208 14.3383 20.7696 14.4825 20.8614V20.8614Z"
+            stroke="#217BF4"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="trophy" viewBox="0 0 28 28" fill="none">
+          <path
+            d="M6.125 6.125V12.1511C6.125 16.4934 9.59816 20.0926 13.9403 20.1248C14.9794 20.1327 16.0099 19.9348 16.9722 19.5426C17.9345 19.1504 18.8097 18.5716 19.5473 17.8395C20.2849 17.1075 20.8703 16.2367 21.2698 15.2774C21.6693 14.3181 21.875 13.2892 21.875 12.25V6.125C21.875 5.89294 21.7828 5.67038 21.6187 5.50628C21.4546 5.34219 21.2321 5.25 21 5.25H7C6.76794 5.25 6.54538 5.34219 6.38128 5.50628C6.21719 5.67038 6.125 5.89294 6.125 6.125Z"
+            stroke="#217BF4"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10.5 24.5H17.5"
+            stroke="#217BF4"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14 20.125V24.5"
+            stroke="#217BF4"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21.6797 14H22.7499C23.6781 14 24.5684 13.6313 25.2247 12.9749C25.8811 12.3185 26.2499 11.4283 26.2499 10.5V8.75C26.2499 8.51794 26.1577 8.29538 25.9936 8.13128C25.8295 7.96719 25.6069 7.875 25.3749 7.875H21.8749"
+            stroke="#217BF4"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6.33809 14H5.23438C4.30612 14 3.41588 13.6313 2.7595 12.9749C2.10312 12.3185 1.73438 11.4283 1.73438 10.5V8.75C1.73438 8.51794 1.82656 8.29538 1.99066 8.13128C2.15475 7.96719 2.37731 7.875 2.60938 7.875H6.10938"
+            stroke="#217BF4"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+
+        <symbol id="tick" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="12" fill="#217BF4" />
+          <path
+            d="M16.125 9.37538L10.875 14.6251L8.25 12.0004"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </svg>
+      <!--      SVG list End -->
+
+      <!--  Main Navbar -->
+      <nav
+        aria-label="Eleventh navbar example"
+        class="navbar navbar-expand-lg border-bottom-1"
+      >
+        <div class="container">
+          <a class="navbar-brand me-5" href="#">
+            <svg height="64" width="118">
+              <use xlink:href="#netbook"></use>
+            </svg>
+          </a>
+          <button
+            aria-controls="navbarsExample09"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler"
+            data-bs-target="#navbarsExample09"
+            data-bs-toggle="collapse"
+            type="button"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample09">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a aria-current="page" class="nav-link active" href="#">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  >Community</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Political</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Social</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Others</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+            </ul>
+            <form class="mx-3" role="search">
+              <input
+                aria-label="Search"
+                class="form-control"
+                placeholder="Search"
+                type="search"
+              />
+            </form>
+            <button class="btn btn-primary" type="button">Log in</button>
+          </div>
+        </div>
+      </nav>
+      <!-- Main Navbar Ends -->
+
+      <div class="container">
+        <div class="pb-5 pt-0 ext-center">
+          <!-- Header Banner -->
+          <div class="row">
+            <!--        Header Image -->
+            <div class="col-md-6 d-flex align-items-center order-md-1">
+              <img
+                src="img/header_chat.png"
+                alt="netbook personal communication"
+                class="img-fluid"
+              />
+            </div>
+            <!--        Header Image Ends -->
+            <!--        Header Content -->
+            <div class="col-md-6 pt-5 order-md-0 text-md-start text-center">
+              <button
+                class="btn btn-sm btn-light mb-3 mt-md-5 mt-1"
+                type="button"
+              >
+                Netbook community
+              </button>
+              <h2 class="mb-3">Your Solution For Community!</h2>
+              <p class="mb-5">
+                More than 2 billion people in over countries use socibook to
+                stay in touch with friends &amp; family.
+              </p>
+              <div class="text-md-start text-center">
+                <button class="btn btn-primary me-md-3 me-0 mb-2" type="button">
+                  About More
+                </button>
+                <button class="btn btn-outline mb-1" type="button">
+                  Invite Friend
+                </button>
+              </div>
+            </div>
+            <!--        Header Content Ends -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="whyNetBook" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-md-start text-center">
+            <h6>Whats Netbooks?</h6>
+            <h2 class="pb-3">Why Join to Netbook Social Network</h2>
+            <p>
+              Recent surveys have indicated that small businesses recognise the
+              need they have to connect with consumer.
+            </p>
+            <ul class="text-start">
+              <li>Groups</li>
+              <li>Messages</li>
+              <li>Share</li>
+            </ul>
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <img src="img/aboutus.png" alt="about netbook" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="achievements">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-4 pt-4 pe-5 text-md-start text-center order-lg-1 mb-5 mb-lg-0"
+            data-content="achievements"
+          >
+            <h6>Our Achievement</h6>
+            <h3 class="mb-3">We are Connecting You The Digital Life.</h3>
+            <p>
+              The scope the Social Media becomes crucial Is helps the business
+              to directly engage with their needs and wants.
+            </p>
+            <button type="button" class="btn btn-primary withArrow white">
+              Discover Me
+            </button>
+          </div>
+          <div class="col-lg-8 order-lg-0">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="card" data-content="rating">
+                  <div class="card-body">
+                    <h5>
+                      <svg height="28" width="28" class="me-2">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      4.8 Rating
+                    </h5>
+                    <div class="brief">
+                      <div class="profileImages">
+                        <div class="profileImage">
+                          <img src="img/pic_sml1.png" alt="profile image 1" />
+                        </div>
+                        <div class="profileImage">
+                          <img src="img/pic_sml2.png" alt="profile image 2" />
+                        </div>
+                        <div class="profileImage">
+                          <img src="img/pic_sml3.png" alt="profile image 3" />
+                        </div>
+                      </div>
+                      <span class="highlight">+836k</span> Members
+                    </div>
+                    <p>
+                      More than 2 billion we people over countries use socibooks
+                      we to stay in touch with friends.
+                    </p>
+                    <a href="javascript://" class="withArrow"
+                      >Join Our Community
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6">
+                <div class="card" data-content="awards">
+                  <div class="card-body">
+                    <h5>
+                      <svg height="28" width="28" class="me-2">
+                        <use xlink:href="#trophy"></use>
+                      </svg>
+                      Awwwards
+                    </h5>
+                    <div class="brief">
+                      <img src="img/github.png" alt="github" /> Best of
+                      <span class="highlight">2021</span> on Github
+                    </div>
+                    <p>
+                      More than 2 billion we people over countries use socibooks
+                      we to stay in touch with friends.
+                    </p>
+                    <a href="javascript://" class="withArrow">Go To Awards </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="teams">
+      <div class="container">
+        <div class="teamHeader">
+          <h6>Valuable team</h6>
+          <h3>Our Active Members</h3>
+          <p>
+            when an unknown printer took a gallery of type and meeting fari
+            scrambled it.
+          </p>
+        </div>
+
+        <div class="teamMembers">
+          <div class="filterTeam">
+            <ul
+              class="nav nav-pills mb-4 justify-content-center d-inline-flex"
+              id="pillNav"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  Newest
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  Popular
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  Active
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <div class="card" data-content="awards">
+                <div class="card-body m-auto">
+                  <div class="memberImage">
+                    <img src="img/member1.png" alt="Fahim Rehman" />
+                    <span class="status">
+                      <svg height="24" width="24">
+                        <use xlink:href="#tick"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <h4 class="memberName">Fahim Rehman</h4>
+                  <p class="memberUser">@rehman</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card" data-content="awards">
+                <div class="card-body m-auto">
+                  <div class="memberImage">
+                    <img src="img/member2.png" alt="Kazi Rehman" />
+                    <span class="status">
+                      <svg height="24" width="24">
+                        <use xlink:href="#tick"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <h4 class="memberName">Kazi Rehman</h4>
+                  <p class="memberUser">@kazi</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card" data-content="awards">
+                <div class="card-body m-auto">
+                  <div class="memberImage">
+                    <img src="img/member3.png" alt="Masterero Ali" />
+                    <span class="status">
+                      <svg height="24" width="24">
+                        <use xlink:href="#tick"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <h4 class="memberName">Materero Ali</h4>
+                  <p class="memberUser">@master</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card" data-content="awards">
+                <div class="card-body m-auto">
+                  <div class="memberImage">
+                    <img src="img/member4.png" alt="Alia Karon" />
+                    <span class="status">
+                      <svg height="24" width="24">
+                        <use xlink:href="#tick"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <h4 class="memberName">Ali Karon</h4>
+                  <p class="memberUser">@alia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-bg-dark py-5">
+      <div
+        class="container d-flex flex-wrap justify-content-between align-items-center"
+      >
+        <div class="d-inline-flex">
+          <a
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+            href="/"
+          >
+            <svg height="34" width="143">
+              <use xlink:href="#netbook-light"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="justify-content-around d-lg-flex d-none nav mb-3 mb-md-1">
+          <li class="nav-item">
+            <a aria-current="page" class="text-white nav-link active" href="#"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a aria-current="page" class="text-white nav-link active" href="#"
+              >Resources</a
+            >
+          </li>
+          <li class="nav-item">
+            <a aria-current="page" class="text-white nav-link active" href="#"
+              >Community</a
+            >
+          </li>
+          <li class="nav-item">
+            <a aria-current="page" class="text-white nav-link active" href="#"
+              >Members</a
+            >
+          </li>
+        </ul>
+        <ul class="list-unstyled d-inline-flex">
+          <li class="ms-2">
+            <a class="text-body-secondary" href="#">
+              <img src="img/Twitter.svg" alt="twitter" />
+            </a>
+          </li>
+          <li class="ms-2">
+            <a class="text-body-secondary" href="#">
+              <img src="img/instagram.svg" alt="instagram" />
+            </a>
+          </li>
+          <li class="ms-2">
+            <a class="text-body-secondary" href="#">
+              <img src="img/facebook.svg" alt="facebook" />
+            </a>
+          </li>
+
+          <li class="ms-2">
+            <a class="text-body-secondary" href="#">
+              <img src="img/Linkedin.svg" alt="instagram" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>

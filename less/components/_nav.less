@@ -1,0 +1,39 @@
+/*Nav.less*/
+
+nav{
+
+  .nav-item{
+    padding:0 0.5rem;
+
+    .nav-link{
+      font-size:0.875rem;
+
+      &.active, &:focus{
+        font-weight: 600;
+      }
+    }
+  }
+
+
+}
+
+.nav {
+  &.nav-pills {
+    background-color: #f2f7fe;
+    padding:8px;
+    font-weight: 500;
+    border-radius: 14px;
+
+    .nav-link{
+      min-width:150px;
+      padding:1.125rem 0.75rem;
+      border-radius: 14px;
+      color:#2F2C4A;
+
+      &.active{
+        box-shadow: 0px 7px 22px -6px rgba(0, 72, 168, 0.34);
+        color:#FFFFFF;
+      }
+    }
+  }
+}

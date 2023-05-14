@@ -1,0 +1,33 @@
+.btn {
+  font-size: 0.875rem;
+  height:50px;
+  padding:0.75rem 3rem;
+  font-weight: @primary_font_weight;
+  border-radius: 0.875rem;
+
+  &:hover{
+    box-shadow: 0px 10px 22px -6px rgba(33, 123, 244, 0.26);
+  }
+
+
+  &.btn-light{
+    background:#e7f1fe;
+    color: #217BF4;
+
+    &:hover, &:focus{
+      border-color: @secondary_font_color;
+    }
+  }
+
+  &.btn-outline{
+    background:transparent;
+    border-color: #217BF4;
+    color:#217BF4;
+
+    &:hover, &:focus{
+      border-color: @primary_font_color;
+    }
+  }
+}
+
+

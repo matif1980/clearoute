@@ -1,0 +1,44 @@
+/* Why Netbook */
+
+section#whyNetBook{
+  padding: 7.25rem 0 2rem;
+
+  h6{
+    color: @primary_font_color;
+    font-weight: 500;
+    font-size: 1.125rem;
+  }
+
+  h2{
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+  p{
+    line-height: 1.75rem;
+  }
+
+  ul{
+    padding-left: 0;
+    color: #171648;
+    font-weight: 500;
+    font-size:1.125rem;
+    li{
+      display: block;
+      background-image: url('../img/bullet.svg');
+      background-repeat: no-repeat;
+      background-position: 0 0.75rem;
+      padding-left: 2rem;
+      padding-top: 0.5rem;
+    }
+  }
+
+  .row{
+    &>.col-md-6{
+      padding-right:7rem;
+      @media screen and (max-width: 991px) {
+        padding-right:1rem;
+      }
+    }
+  }
+}

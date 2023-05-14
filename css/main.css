@@ -1,0 +1,347 @@
+/**
+ * Created by Mohammad Atif on 12/05/2023
+ */
+/*fonts.less*/
+body {
+  font-family: "Inter", sans-serif;
+  color: #8C8C8C;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: #000000;
+}
+input,
+button,
+select,
+optgroup,
+textarea {
+  font-family: "Inter", sans-serif;
+}
+/* Fancy */
+a.withArrow.white:hover:after,
+button.withArrow.white:hover:after {
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  left: 10px;
+}
+a.withArrow.white:after,
+button.withArrow.white:after {
+  content: url(../img/ArrowRight_white.svg);
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+  left: 5px;
+}
+a.withArrow:after,
+button.withArrow:after {
+  transition: 0.1s;
+  display: inline-block;
+  content: url(../img/ArrowRight.svg);
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 0;
+  left: 3px;
+}
+a.withArrow:hover:after,
+button.withArrow:hover:after {
+  width: 12px;
+  height: 12px;
+  top: 1px;
+  left: 5px;
+}
+header {
+  background-image: linear-gradient(to left top, #d4e7fe, #e2ecfe, #eef2ff, #f8f8ff, #ffffff);
+}
+header h2 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  color: #0A093D;
+}
+@media screen and (max-width: 767px) {
+  header h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  header h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+header p {
+  color: #656464;
+  font-size: 1.13rem;
+  line-height: 1.75rem;
+}
+header nav {
+  border-bottom: 1px solid #e0ecfe;
+}
+header nav .btn {
+  height: 3.125rem;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+}
+header .btn {
+  height: 4rem;
+}
+header .btn-sm {
+  height: 2.375rem;
+  border-radius: 0.5rem;
+  line-height: 0.5rem;
+  padding: 0.75rem 2.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.btn {
+  font-size: 0.875rem;
+  height: 50px;
+  padding: 0.75rem 3rem;
+  font-weight: 400;
+  border-radius: 0.875rem;
+}
+.btn:hover {
+  box-shadow: 0px 10px 22px -6px rgba(33, 123, 244, 0.26);
+}
+.btn.btn-light {
+  background: #e7f1fe;
+  color: #217BF4;
+}
+.btn.btn-light:hover,
+.btn.btn-light:focus {
+  border-color: #90baf8;
+}
+.btn.btn-outline {
+  background: transparent;
+  border-color: #217BF4;
+  color: #217BF4;
+}
+.btn.btn-outline:hover,
+.btn.btn-outline:focus {
+  border-color: #217BF4;
+}
+/*Nav.less*/
+nav .nav-item {
+  padding: 0 0.5rem;
+}
+nav .nav-item .nav-link {
+  font-size: 0.875rem;
+}
+nav .nav-item .nav-link.active,
+nav .nav-item .nav-link:focus {
+  font-weight: 600;
+}
+.nav.nav-pills {
+  background-color: #f2f7fe;
+  padding: 8px;
+  font-weight: 500;
+  border-radius: 14px;
+}
+.nav.nav-pills .nav-link {
+  min-width: 150px;
+  padding: 1.125rem 0.75rem;
+  border-radius: 14px;
+  color: #2F2C4A;
+}
+.nav.nav-pills .nav-link.active {
+  box-shadow: 0px 7px 22px -6px rgba(0, 72, 168, 0.34);
+  color: #FFFFFF;
+}
+/* Why Netbook */
+section#whyNetBook {
+  padding: 7.25rem 0 2rem;
+}
+section#whyNetBook h6 {
+  color: #217BF4;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+section#whyNetBook h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 3rem;
+}
+section#whyNetBook p {
+  line-height: 1.75rem;
+}
+section#whyNetBook ul {
+  padding-left: 0;
+  color: #171648;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+section#whyNetBook ul li {
+  display: block;
+  background-image: url('../img/bullet.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0.75rem;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+}
+section#whyNetBook .row > .col-md-6 {
+  padding-right: 7rem;
+}
+@media screen and (max-width: 991px) {
+  section#whyNetBook .row > .col-md-6 {
+    padding-right: 1rem;
+  }
+}
+/* Achievement */
+section#achievements .card {
+  border-color: #f4f4f5;
+  color: #8C8C8C;
+  border-radius: 14px;
+  padding: 2.5rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 767px) {
+  section#achievements .card {
+    padding: 1rem 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  section#achievements .card {
+    padding: 1rem 0;
+  }
+}
+section#achievements .card:hover {
+  border-color: transparent;
+  box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.14);
+}
+section#achievements .card:hover .withArrow {
+  color: #217BF4;
+}
+section#achievements .card:hover .withArrow:after {
+  content: url(../img/ArrowRight_blue.svg);
+}
+section#achievements .card[data-content] h5 {
+  padding-bottom: 1rem;
+}
+section#achievements .card[data-content] .brief {
+  padding-bottom: 1rem;
+}
+section#achievements .card[data-content] .brief img {
+  box-shadow: -5px 4px 14px rgba(151, 151, 151, 0.28);
+}
+section#achievements .card[data-content] .brief .profileImages {
+  display: inline-block;
+  margin-right: 8px;
+}
+section#achievements .card[data-content] .brief .profileImages .profileImage {
+  display: inline-block;
+  overflow: hidden;
+  width: 24px;
+}
+section#achievements .card[data-content] .brief .profileImages .profileImage:not(:first-child) {
+  margin-left: -20px;
+  -webkit-mask: radial-gradient(circle 12px at 5px 50%, transparent 99%, #fff 100%);
+  mask: radial-gradient(circle 12px at 5px 50%, transparent 99%, #fff 100%);
+}
+section#achievements .card[data-content] .brief .profileImages .profileImage img {
+  width: 100%;
+  display: block;
+}
+section#achievements .card[data-content] .highlight {
+  color: #217BF4;
+  font-weight: 600;
+}
+section#achievements .card .withArrow {
+  color: #000000;
+  text-decoration: none;
+}
+section#achievements h6 {
+  color: #217BF4;
+  font-size: 1.125rem;
+}
+section#achievements h3 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+section#teams {
+  text-align: center;
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+}
+section#teams .teamHeader {
+  width: 40%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+@media screen and (max-width: 767px) {
+  section#teams .teamHeader {
+    width: auto;
+    padding: 1rem 0;
+  }
+}
+section#teams .teamHeader h6 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #217BF4;
+}
+section#teams .teamHeader h3 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+section#teams .filterTeam {
+  margin-bottom: 1.5rem;
+}
+section#teams .card {
+  border-color: #f4f4f5;
+  color: #8C8C8C;
+  border-radius: 14px;
+  padding: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 767px) {
+  section#teams .card {
+    padding: 1rem 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  section#teams .card {
+    padding: 1rem 0.5rem;
+  }
+}
+section#teams .card:hover {
+  border-color: transparent;
+  box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.14);
+}
+section#teams .card .memberImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url('../img/profileCircle.png');
+  margin-bottom: 2rem;
+  position: relative;
+}
+section#teams .card .memberImage img {
+  border-radius: 50%;
+}
+section#teams .card .memberImage .status {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: 0;
+  left: calc(50% - 12px);
+}
+section#teams .card .memberUser {
+  color: #656464;
+}
+/*# sourceMappingURL=main.css.map */
