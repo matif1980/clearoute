@@ -102,6 +102,51 @@ header .btn-sm {
   font-size: 0.75rem;
   font-weight: 500;
 }
+.search {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.search .search-input {
+  width: min(250px, 70vw);
+  background-color: transparent;
+  color: #000;
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0;
+  outline: none;
+  padding: 1rem 3rem;
+  margin-right: 2rem;
+}
+.search .search-input:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: none;
+  border-color: inherit;
+}
+.search .search-input ::placeholder {
+  color: #ffffff;
+}
+.search .search-icon {
+  position: absolute;
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+}
+.search .magnify {
+  left: 1rem;
+}
+.search .clear {
+  right: 3rem;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.65);
+}
+.search .clear:hover {
+  color: #000000;
+}
+::-webkit-search-cancel-button {
+  display: none;
+  pointer-events: none;
+}
 .btn {
   font-size: 0.875rem;
   height: 50px;
